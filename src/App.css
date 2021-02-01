@@ -1,38 +1,130 @@
-.App {
-  text-align: center;
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* NAVBAR */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  height: 80px;
+  z-index: 100;
+  background: transparent;
+  transition: 1s;
+}
+
+.nav-links {
+  width: 40%;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  text-decoration: none;
+  color: rgb(10, 10, 10);
+}
+
+.links {
+  text-decoration: none;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.nav-links li:hover,
+ .nav-links li:active {
+   border-bottom: 2px solid #aa0f0f;
+ }
+
+.logo {
+  color: white;
+  font-size: 2rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.nav-btnX,
+.nav-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  color: rgb(10, 10, 10);
+  font-size: 2rem;
+  padding-top: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+
+  @media (min-width: 769px) {
+    .navbar.active {
+      background-color: rgb(231, 228, 228);
+      height: 50px;
+    }
+    .navbar.active .links,
+    .navbar.active .nav-btn,
+    .navbar.active .logo{
+      color: rgb(10, 10, 10);
+    }
+    .navbar.active .logo {
+      font-size: 1.5rem;
+    
+    }
+    .nav-btnX,
+    .nav-btn {
+        display: none;
+    }
+    .nav-links {
+            height: auto;
+            display: flex;
+            margin-left: 4rem;
+          }
   }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+@media (max-width: 769px) {
+.navbar {
+  background-color: white;
+  height: 50px;
+}
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  position: absolute;
+  top: 50px;
+  height: 70vh;
+  z-index: 1;
+  background-color: white;
+  width: 100%;
+  transition: 0.5s ease-in;
+}
+.show-nav {
+    height: 0px;
+}
+.links {
+  color: rgb(10, 10, 10);
+}
+.logo {
+  color: rgb(10, 10, 10);
+
+}
+}
+
+/* BANNER */
+
+img {
+  object-fit: cover;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  filter: brightness(40%)
 }
