@@ -1,6 +1,9 @@
 import React from 'react';
 import '../App.css';
-import wbg from "../Images/wbg1.jpg";
+import wbg1 from "../Images/wbg1.jpg";
+import wbg from "../Images/wbg.jpg";
+import { Link } from 'react-router-dom'; 
+
 
 const Welcome = () => {
     return(
@@ -9,9 +12,10 @@ const Welcome = () => {
             <h1>Welcome!</h1>
             <div className='welcome-info'>
                 <p>Doctors save lives, <span className='welcome-span'>Physiotherapist</span> makes the life worth living!</p>
-                <a href='/about' className='welcome-btn'>Read About Us</a>
+                <img src={wbg} className='welcome-img1' alt=''/>
+                <Link to='/about' className='welcome-btn'>Read About Us</Link>
             </div>
-            <img src={wbg} className='welcome-img' alt=''/>
+            <img src={wbg1} className='welcome-img' alt=''/>
         </section>
         </>
     )

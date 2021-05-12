@@ -4,6 +4,7 @@ import { MdLocalPhone, MdEmail, MdLocationOn } from "react-icons/md";
 import { GiBattery100, GiBattery25 } from "react-icons/gi";
 import { FaFacebookSquare, FaInstagramSquare } from "react-icons/fa";
 
+
 const ContactInfo = () => {
 
     return(

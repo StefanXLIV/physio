@@ -14,7 +14,7 @@ const Home = () => {
         <>
         <section className='banner'>
             <img src={background} alt='' />
-            <h1 className="banner-text">Rehabilitation clinic <span className="home-span">MADS</span></h1>
+            <h1 className="banner-text">Physical therapy centar <span className="home-span">MADS</span></h1>
         </section>
         <Welcome />
         <Providers />

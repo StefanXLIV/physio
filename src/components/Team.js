@@ -5,6 +5,7 @@ import team2 from "../Images/team2.jpg";
 import team3 from "../Images/team3.jpg";
 import team4 from "../Images/team4.jpg";
 import TeamMember from './TeamMember';
+import { Link } from 'react-router-dom'; 
 
 
 const Team = () => {
@@ -18,7 +19,7 @@ const Team = () => {
                 <TeamMember src={team3} label='Anne' />
                 <TeamMember src={team4} label='Stephen' />
             </ul>
-            <a href='/about' className='team-btn'>Check Our Team</a>
+            <Link to='/about' className='team-btn'>Check Our Team</Link>
         </section>
     </>
     );
