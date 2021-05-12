@@ -1,34 +1,21 @@
 import React from 'react';
-import background from "../Images/pt.jpg";
+import '../App.css';
+import ContactInfo from '../components/ContactInfo';
+import { IoIosArrowDropdown} from "react-icons/io";
+
 
 
 const Contact = () => {
+    
     return(
 <>
-        <section className='banner'>
-            <img src={background} />
-            <h1>Welcome to <span>MADS</span> physiotherapy</h1>
-            <h1>Hellooo</h1>
-            <h1>Hellooo</h1>
-            <h1>Hellooo</h1>
-            <h1>Hellooo</h1>
-            <h1>Hellooo</h1>
-            <h1>Hellooo</h1>
-            <h1>Hellooo</h1>
-            <h1>Hellooo</h1>
-            <h1>Hellooo</h1>
-            <h1>Hellooo</h1>
-            <h1>Hellooo</h1>
-            <h1>Hellooo</h1>
-            <h1>Hellooo</h1>
-            <h1>Hellooo</h1>
-            <h1>Hellooo</h1>
-            <h1>Hellooo</h1>
-            <h1>Hellooo</h1>
-            <h1>Hellooo</h1>
-
-        </section>
-        </>    )
-}
+    <section className='contact-banner'>
+        <img className='contact-bg' />
+        <h1 className="banner-text"><span className="contact-span">CONTACT</span> us</h1>
+        <a href='#contact' className='contact-arrow'><IoIosArrowDropdown /></a>
+    </section>
+    <ContactInfo />
+</>  
+)}
 
 export default Contact;
