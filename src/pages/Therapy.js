@@ -16,7 +16,7 @@ const Therapy = () => {
     return(
         <>
         <section className='banner'>
-            <img src={background} />
+            <img src={background}  alt=''/>
             <h1 className="banner-text"><span className="therapy-span">THERAPIES</span> we do</h1>
         </section>
         <ul className='about-team-container'>

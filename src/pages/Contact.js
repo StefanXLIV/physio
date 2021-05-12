@@ -10,7 +10,7 @@ const Contact = () => {
     return(
 <>
     <section className='contact-banner'>
-        <img className='contact-bg' />
+        <img className='contact-bg' alt='' />
         <h1 className="banner-text"><span className="contact-span">CONTACT</span> us</h1>
         <a href='#contact' className='contact-arrow'><IoIosArrowDropdown /></a>
     </section>

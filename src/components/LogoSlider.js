@@ -52,22 +52,22 @@ class LogoSlider extends Component {
         <h2>Our Partners</h2>
         <Slider {...settings}>
           <div className='sponsor'>
-            <img src={sponsor1} />
+            <img src={sponsor1} alt='' />
           </div>
           <div className='sponsor'>
-            <img src={sponsor2} />
+            <img src={sponsor2} alt='' />
           </div>
           <div className='sponsor'>
-            <img src={sponsor3} />
+            <img src={sponsor3} alt='' />
           </div>
           <div className='sponsor'>
-            <img src={sponsor4} />
+            <img src={sponsor4} alt='' />
           </div>
           <div className='sponsor'>
-            <img src={sponsor5} />
+            <img src={sponsor5} alt='' />
           </div>
           <div className='sponsor'>
-            <img src={sponsor6} />
+            <img src={sponsor6} alt='' />
           </div>
         </Slider>
       </div>

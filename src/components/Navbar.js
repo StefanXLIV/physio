@@ -34,7 +34,7 @@ const Navbar = () => {
     
     return (    
         <nav className={navbar ? "navbar active" : "navbar"}>
-            <NavLink to='/' className="logo" onClick={closeNav}><img src={logo} className='logo-img' /></NavLink>
+            <NavLink to='/' className="logo" onClick={closeNav}><img src={logo} className='logo-img' alt='' /></NavLink>
             <ul className={ click ? "nav-links show-nav" : "nav-links"} onClick={handleClick}>
                <NavLink to='/' exact className="links" activeClassName="header-active"><li>Home</li></NavLink>
                <NavLink to='/therapy' className="links" activeClassName="header-active"><li>Therapy</li></NavLink>

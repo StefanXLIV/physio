@@ -13,7 +13,7 @@ const Home = () => {
     return(
         <>
         <section className='banner'>
-            <img src={background} />
+            <img src={background} alt='' />
             <h1 className="banner-text">Rehabilitation clinic <span className="home-span">MADS</span></h1>
         </section>
         <Welcome />

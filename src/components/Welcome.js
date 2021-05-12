@@ -11,7 +11,7 @@ const Welcome = () => {
                 <p>Doctors save lives, <span className='welcome-span'>Physiotherapist</span> makes the life worth living!</p>
                 <a href='/about' className='welcome-btn'>Read About Us</a>
             </div>
-            <img src={wbg} className='welcome-img' />
+            <img src={wbg} className='welcome-img' alt=''/>
         </section>
         </>
     )

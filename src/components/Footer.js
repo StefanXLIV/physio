@@ -12,7 +12,7 @@ const Footer = () => {
 <>
     <section className='footer'>
         <div className='up-footer'>
-            <img src={logo} className='footer-logo' />
+            <img src={logo} className='footer-logo' alt='' />
             <p>MADS rehab centar has therapists that are well educated to solve you any problems.</p>
         </div>
         <div className='mid-footer'>

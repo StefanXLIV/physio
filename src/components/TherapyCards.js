@@ -9,7 +9,7 @@ const TherapyCards = (props) => {
         <li className='card'>
             <div className='card-wrap'>
                 <Link className='card-link' to={props.path}>
-                    <img src={props.src} className='card-image' />
+                    <img src={props.src} className='card-image' alt='' />
                     <h2>{props.label}</h2>
                 </Link>
             </div>
